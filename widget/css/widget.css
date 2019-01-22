@@ -1,0 +1,332 @@
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+  @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+    html{
+      user-select: none;
+    }
+    body{
+      font-family: 'Open Sans';
+    }
+    ::-webkit-scrollbar {
+      width: 1px;
+    }
+    .widget-container{
+      margin: 9px auto;
+      width: 75%;
+      background:#373942;
+      overflow: hidden;
+    }
+    @media only screen and (max-width: 600px) {
+      .widget-container{
+        width: 90%
+      }
+    }
+    
+    #widget-header, #widget-footer, #widget-content{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    #widget-header, #widget-footer{
+      background: #31333b;
+      height: 51px;
+    }
+    .widget-ic{
+      cursor: pointer;
+    }
+
+    /*
+    * === Widget Header  ===
+    */
+    #widget-header > div{
+      padding: 0;
+    }
+    /*
+    * — widget logo header —
+    */
+    #widget-header .widget-logo-container{
+      height: 100%;
+      width: 66px;
+      float: left;
+      background-color: #00c29a;
+    }
+
+    .widget-logo-text{cursor: pointer;}
+    
+    #widget-header .widget-logo-text{
+      font-family: 'Shadows Into Light';
+      color: white;
+      -ms-transform: rotate(20deg); /* IE 9 */
+      -webkit-transform: rotate(20deg); /* Safari */
+      transform: rotate(-7deg);
+      padding-left: 12px;
+      padding-top: 7px;
+      line-height: 0.9;
+    }
+
+    .widget-title{
+      color: white;
+      padding-top: 14px;
+      padding-left: 7px;
+    }
+
+    /*
+    * — widget paginator slide header —
+    */
+    .widget-paginator{
+      padding-top: 11px;
+      float: right;
+    }
+    .widget-paginator .widget-ic {
+      background: #4b4d55;
+      border-radius: 50%;
+      padding: 2px;
+      color: white;
+    }
+    .widget-paginator .widget-ic:hover{
+      color: #00c29a;
+      background-color: white;
+    }
+    
+    /*=== End Widget Header  ===*/
+
+
+    /*
+    * === Widget Content  ===
+    */
+
+    #widget-content::-webkit-scrollbar {
+      display: none;
+    }
+
+    #widget-content{
+
+      overflow-x: scroll;
+
+    }
+    .widget-items{
+        display: -webkit-box;
+        display: -webkit-inline-box;
+    }
+    .widget-card{
+      background: #373942;
+      height: 248px;
+      padding: 0;
+      overflow: hidden;
+    }
+    .widget-img{
+      width: 100%;
+      height: 100%
+    }
+
+    /*
+    * — Qoutation Card Style —
+    */
+
+    .wideget-card-quotation{
+     background-image: url(../img/quotation.png);
+     background-size: 14%;
+     background-repeat: no-repeat;
+     background-position: 50% 16%;
+    }
+
+    .widget-text-quotation{
+     color: white;
+     text-align: center;
+     margin: 39px;
+     margin-top: 92px;
+    }
+
+    /*— End Qoutation Card Style —*/
+
+
+    /*
+    * — widget Card image style —
+    */
+
+    .widget-zoom-overlay{
+      height: 100%;
+      width: 100%;
+      
+      background: black;
+      position: absolute;
+      opacity: 0;
+      z-index: 99;
+      transition: all 0.5s ease-out;
+    }
+
+    .widget-card-img:hover .widget-zoom-overlay{
+       opacity: 0.4;
+    }
+
+    .widget-zoom-overlay .widget-ic{
+      cursor: pointer;
+      color: white;
+      position: relative;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      transition: all 0.5s ease-out;
+    }
+
+    .widget-zoom-overlay:hover  > i.widget-ic{
+       top: 50%;
+    }
+
+  
+    .widget-card-img .widget-img{ 
+      transition: all 1s ease-in-out; 
+    }
+    .widget-zoom-overlay:hover +  img.widget-img{
+      transform: scale(1.1)
+    }
+
+    /*— End widget Card image style —*/
+
+    /*
+    * — widget Card Video style —
+    */
+    .widget-card-vid > .widget-card-caption{
+      position: absolute;
+      bottom: 0px;
+      z-index: 99;
+      margin: 0;
+      width: 100%;
+      color: white;
+      background-image: linear-gradient(to top, #000000 , #ffffff00);
+    }
+     .widget-card-vid > .widget-card-caption .widget-ic{
+      color: #FFF;
+      background: #00c29a;
+      border-radius: 100%;
+      margin-left: 23px;
+      margin-top: 3px;
+      padding: 11px;
+    }
+    .widget-card-vid > .widget-card-caption  > div i.widget-ic {
+
+      border: none;
+      box-shadow: 0 0 0 0 #00c29a94;
+      cursor: pointer;
+    }
+    .widget-card-vid:hover > .widget-card-caption  > div i.widget-ic{
+      -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+      -webkit-animation: pulse 2s infinite ;
+      -moz-animation: pulse 2s infinite ;
+      -ms-animation: pulse 2s infinite ;
+      animation: pulse 2s infinite ;
+    }
+
+    @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+    @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+    @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+    @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+    .widget-card-quot:hover > .widget-text-quotation{
+     animation: pulseQuot 3s  ;
+    }
+
+    @keyframes pulseQuot{
+        0%:{
+              transform: scale(1);
+        }
+        50%{
+              transform: scale(1.1);
+
+        }
+        100%:{
+              transform: scale(1);
+        };
+      }
+
+    /* — End widget Card Video style —*/
+
+     /*
+      * — wScroll style —
+      */
+    .scroll{
+      height: 3px;
+      background: #00c29a; 
+      width: 0%; 
+      max-width: 102%; 
+      transition: 1s
+    }
+    /* — End scroll —*/
+
+    /*=== End Widget content ===*/
+
+
+
+    /*
+    * === widget footer ===
+    */
+
+    /*
+    * — footer logo style —
+    */
+    #widget-footer  .widget-logo-text{
+      font-family: 'Shadows Into Light';
+      color: white;
+      -ms-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+      transform: rotate(-7deg);
+      padding-left: 0px;
+      padding-top: 2px;
+      line-height: 0.9;
+    }
+
+    #widget-footer .widget-logo-text span.part-2{
+    color: #00c29a;
+     padding-left: 40px;
+    }
+
+
+    /*
+    * — view profile link style —
+    */
+    .widget-view-profile{
+      float: right;
+      color: white;
+      font-size: 12px;
+    }
+
+    .widget-view-profile .widget-ic{
+      padding-top: 12px;
+      position: relative;
+      top: 5px;
+      font-size: 19px;
+    }
+
+    a.widget-view-profile {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.15em;
+      position: relative;
+   }
+    a.widget-view-profile:after {    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+   }
+    a.widget-view-profile:hover:after { 
+      width: 100%; 
+      left: 0; 
+    }
+
+  /*
+  * === End widget footer ===
+  */
+
+
+
+ 
+
+
+
+
