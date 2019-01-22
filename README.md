@@ -4,6 +4,9 @@
 # Preview
 ![alt text](widget/img/screenshot/Capture.PNG "Logo Title Text 1")
 
+# how it work?
+there is a hover on each element in the widget with smooth feeling of using it when you slide by clicking on the above right-left icons or using mouse and also there is an auto slide that run when you stop hovering on the widget content  every 10s  to slide from first card item to last one and start again with a progress bar in the bottom of the widget charged .
+
 # Live Preview
 [www.widget.com](https://widget-design.netlify.com)
 
@@ -22,5 +25,8 @@ Little explain for installation If the icons do not appear check your connection
 
 # Conclusion
 
-There are many more feature which are not added but the most thing i tried to do but i didn't finish it with pure javascript  is the mobile feeling  when i slide on mobile device 
+There are many more feature which are not added but the most thing i tried to do but i didn't finish it yet with pure javascript  is the mobile feeling  when you slide on mobile device 
+
+
+
 
