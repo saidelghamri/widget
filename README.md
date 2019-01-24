@@ -4,7 +4,7 @@
 # Preview
 ![alt text](widget/img/screenshot/Capture.PNG "Logo Title Text 1")
 
-# how it work?
+# Description
 there is a hover on each element in the widget with smooth feeling of using it when you slide by clicking on the above right-left icons or using mouse and also there is an auto slide that run when you stop hovering on the widget content  every 10s  to slide from first card item to last one and start again with a progress bar in the bottom of the widget charged .
 
 # Live Preview
