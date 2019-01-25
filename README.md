@@ -22,10 +22,10 @@ Little explain for installation If the icons do not appear check your connection
 * HTML5
 * CSS3
 * JAVASCRIPT
-
+<!---
 # Conclusion
 
-There are many more feature which are not added but the most thing i tried to do but i didn't finish it yet with pure javascript  is the mobile feeling  when you slide on mobile device 
+There are many more feature which are not added but the most thing i tried to do but i didn't finish it yet with pure javascript  is the mobile feeling  when you slide on mobile device --->
 
 
 
