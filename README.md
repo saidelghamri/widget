@@ -15,8 +15,7 @@ it's simple to use it!!
 1. dwonload the project.
 2. open index.html file in your browser.
 3. Opss I forgot for last 3 step... ENJOY! ;)
-
-Little explain for installation If the icons do not appear check your connection because i used online library icons link in the project 
+ 
 
 # Platform Used
 * HTML5
